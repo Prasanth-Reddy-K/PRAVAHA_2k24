@@ -45,6 +45,7 @@
                         <li class="active"><a href="../index.html">Home</a></li>
                         <li><a href="./about-us.html">About</a></li>
                         <li><a href="./speaker.html">Conveners</a>
+                        <li><a href="./committes.html">Committees</a>
                             <!-- <ul class="dropdown">
                                 <li><a href="#">Jayden</a></li>
                                 <li><a href="#">Sara</a></li>

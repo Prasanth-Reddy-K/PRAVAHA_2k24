@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:5500/customer.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Customer Login_files/styles.css">
+    <script defer="" src="./Customer Login_files/customer.js.download"></script>
+    <title>Customer Login</title>
+    <style>
+       /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #eee;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 300px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ 
+    </style>
+    <script>
+         // customer.js
+
+            // Function to handle customer login
+            function customerLogin() {
+                // Get the form values
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                // Implement login logic (replace with your actual login validation logic)
+                if (username === 'demo' && password === 'demo123') {
+                    alert('Login successful!'); // Replace with your desired action
+                } else {
+                    alert('Invalid username or password'); // Replace with your desired action
+                }
+            }
+
+    </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+
+<body>
+    <header>
+        <h1>Customer Login</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="http://localhost:5500/customer.html">Customer Login</a></li>
+            <li><a href="http://localhost:5500/newcustomer.html">Add New Customer</a></li>
+            <li><a href="http://localhost:5500/oldcustomers.html">See Old Customers</a></li>
+            <li><a href="http://localhost:5500/createcustomer.html">Create New Customer</a></li>
+            <li><a href="http://localhost:5500/checklogin.html">Check Correct Login</a></li>
+            <li><a href="http://localhost:5500/products.html">Open Products Table</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="customerLogin">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required="">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required="">
+
+                <button type="button" onclick="customerLogin()">Login</button>
+            </form>
+        </section>
+    </main></body><app-content ng-version="16.0.0"><template shadowrootmode="open"><!----><app-similar-tools _nghost-ng-c4214649903=""><!----><!----><!----></app-similar-tools><!----><!----><style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></template></app-content></html>
